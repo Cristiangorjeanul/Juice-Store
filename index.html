@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Juice Store</title>
+  <meta name="Juice store" content="Lemohoney factory, Lemohoney juice, honey, 
+  lemon juice, orange juice, raspberry juice, blackberry juice, apple juice, pineapple juice" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/survey.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="./js/glass.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/survey.js"></script>
+  <script src="js/app1.js"></script>
+  <script src="js/app2.js"></script>
+</head>
+
+<body>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="panel panel-default text-center">
+        <div class="panel-body">
+
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-home"></span>&nbsp;
+                Lemohoney</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="./login.html" target="_blank"><span class="glyphicon glyphicon-log-in"
+                      style="font-size: 15px; color: #ffa500;"></span> Log-in</a></li>
+                <li><a href="./order.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"
+                      style="font-size: 15px; color: #ffa500;">Orders</span></a></li>
+                <li><a href="#contact"><span class="glyphicon glyphicon-phone"
+                      style="font-size: 15px; color: #ffa500;">Contacts</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="header" class="container-fluid text-center">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div id="title">
+                      <h1>Lemohoney</h1>
+                      <div id="juice-glass">
+                        <div class="wrap">
+                          <div class="glass"></div>
+                          <div class="stem"></div>
+                          <div class="base"></div>
+                          <div class="bubble">
+                            <div id="bubble1"></div>
+                            <div id="bubble2"></div>
+                            <div id="bubble3"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>juice</h2>
+                      <b>Tasty <span class="glyphicon glyphicon-heart" style="color: red; font-size: 17px;"></span>
+                        Healthy <span class="glyphicon glyphicon-heart" style="color: red; font-size: 17px;"></span>
+                        Energy</b>
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="./assets/lemon-orange.jpg" alt="Lemon-orange juices" width="1200" height="700">
+                          <div class="carousel-caption">
+                            <h3>MOST WANTED</h3>
+                            <h4>Lemon and orange</h4>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <img src="./assets/raspberries-blackberries.jpg" alt="Raspberries-blackberries juices"
+                            width="1200" height="700">
+                          <div class="carousel-caption">
+                            <h3>BEST PRICE</h3>
+                            <h4>Raspberries and blackberries</h4>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <img src="./assets/apple-pineapple.jpg" alt="Apple-pineapple juices" width="1200"
+                            height="700">
+                          <div class="carousel-caption">
+                            <h3>COMING SOON</h3>
+                            <h4>Apple and pineapple</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+    </header>
+
+    <main>
+      <div id="products" class="container-fluid text-center">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <div class="col-sm-12">
+                <h2>OUR &nbsp; PRODUCTS</h2> <br><br><br>
+
+                <div class="col-sm-3">
+                  <img src="assets/lemon.jpg" alt="lemon lemonade">
+                  <h3>Lemon juice</h3>
+                  <h4><span class="glyphicon glyphicon-euro"></span>&nbsp;2.00 - 2 L</h4>
+                  <button class="btn"><a href="./order.html" target="_blank">Order</a></button>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img src="assets/orange.jpg" alt="lemon lemonade">
+                    <h3>Orange juice</h3>
+                    <h4><span class="glyphicon glyphicon-euro"></span>&nbsp;2.00 - 2 L</h4>
+                    <button class="btn"><a href="./order.html" target="_blank">Order</a></button>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img src="assets/raspberry.jpg" alt="lemon lemonade">
+                      <h3>Raspberry juice</h3>
+                      <h4><span class="glyphicon glyphicon-euro"></span>&nbsp;2.00 - 2 L</h4>
+                      <button class="btn"><a href="./order.html" target="_blank">Order</a></button>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="assets/blackberry.jpg" alt="lemon lemonade">
+                        <h3>Blackberry juice</h3>
+                        <h4><span class="glyphicon glyphicon-euro"></span>&nbsp;2.00 - 2 L</h4>
+                        <button class="btn"><a href="./order.html" target="_blank">Order</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                      <h2>COMING &nbsp; SOON</h2> <br><br><br>
+                      <div class="col-sm-6">
+                        <img src="assets/apple.jpg" alt="lemon lemonade">
+                        <h3>Apple juice</h3>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <img src="assets/pineapple.jpg" alt="lemon lemonade">
+                          <h3>Pineapple juice</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </main>
+
+    <section>
+      <div id="ingredients" class="container-fluid text-center">
+        <div class="col-sm-12 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <h2>INGREDIENTS</h2>
+              <br><span class="glyphicon glyphicon-leaf logo-small"
+                style="color: green; text-shadow: 1px 1px 1px black;"></span>
+              <h3 style="color: green; text-shadow: 1px 1px 1px black;">BIO FRUITS</h3>
+              <h5>NO artificial flavors!</h5><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="image" id="fruits"></div>
+
+        <br>
+        <div class="col-sm-12 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <br><br><span class="glyphicon glyphicon-grain logo-small"
+                style="color: #ffd500; text-shadow: 1px 1px 1px black;"></span>
+              <br>
+              <h3 style="color: #ffd500; text-shadow: 1px 1px 1px black;">BIO HONEY</h3>
+              <h5>NO sugar or sweeteners!</h5><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="image" id="honey"></div>
+
+        <br>
+        <div class="col-sm-12 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <br><br><span class="glyphicon glyphicon-globe logo-small"
+                style="color: #d4f1f9; text-shadow: 1px 1px 1px black;"></span>
+              <br>
+              <h3 style="color: #d4f1f9; text-shadow: 1px 1px 1px black;">PURE WATER</h3>
+              <h5>NO preservatives!</h5><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="image" id="water"></div>
+      </div>
+    </section>
+
+    <article>
+      <div id="team" class="container-fluid text-center">
+        <div class="col-sm-12 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <div class="text-center">
+                <h2>OUR TEAM</h2>
+                <br>
+                <div class="col-sm-3 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                      <img src="./assets/Cristian.jpg" alt="Sales Manager" width="400" height="300">
+                    </div>
+                    <div class="panel-heading">
+                      <h3>Cristian T.</h3>
+                      <h4>General Manager</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                      <img src="./assets/Cristian.jpg" alt="Sales Manager" width="400" height="300">
+                    </div>
+                    <div class="panel-heading">
+                      <h3>Cristian T.</h3>
+                      <h4>Sales Manager</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                      <img src="./assets/Cristian.jpg" alt="Sales Manager" width="400" height="300">
+                    </div>
+                    <div class="panel-heading">
+                      <h3>Cristian T.</h3>
+                      <h4>Marketing Manager</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                      <img src="./assets/Cristian.jpg" alt="Sales Manager" width="400" height="300">
+                    </div>
+                    <div class="panel-heading">
+                      <h3>Cristian T.</h3>
+                      <h4>Plant Manager</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <footer class="text-center">
+      <div class="col-sm-12 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-body">
+            <div class="panel-footer">
+              <h3>SURVEY</h3>
+              <h4>Your opinion is very important to us!</h4><br>
+              <h4>Do you like our products?</h4><br>
+              <button class="like-btn" data-toggle="modal" data-target="#myModal">Like!<br><span
+                  id="counter"></span></button>
+              <h4>Please rate our services!</h4>
+              <div class="survey">
+                <div class="page">
+                  <form id="form" class="form">
+                    <div class="star">
+                      <input type="radio" id="star5" name="star" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="star" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="star" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="star" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="star" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">x</button>
+              <b style="color: #ffa500; font-size: 18px; text-shadow: 1px 1px 1px black;"><span
+                  class="glyphicon glyphicon-heart"
+                  style="color:red; font-size: 18px; text-shadow: 1px 1px 1px black;"></span>&nbsp; Thank
+                you very much
+                <br>for your consideration!</b>
+            </div>
+            <div class="modal-body text-center">
+              <b style="color:#ffa500; font-size: 18px; text-shadow: 1px 1px 1px black;"><span
+                  class="glyphicon glyphicon-heart"
+                  style="color:red; font-size: 18px; text-shadow: 1px 1px 1px black;"></span>&nbsp; We hope
+                our
+                products<br>will become your favorites!</b>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Container -->
+      <div id="contact" class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>CONTACTS:</h3>
+            <h4>Lemohoney factory & Store<br>
+              <h4><span class="glyphicon glyphicon-map-marker"></span> Lemohoney City</h4>
+              <h4><span class="glyphicon glyphicon-phone"></span> &nbsp;Phone: 01234-56789</h4>
+              <h4><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email: Lemohoney@lemohoney.com</h4>
+              <h5>This is a demo page.<br>That is why this is a fictitious address!</h5>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4185642.6579578235!2d24.543155414906206!3d46.075267433374414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1603219088021!5m2!1sro!2sro"
+                width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+
+
+      <div class='footer' class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <ul>
+                  <li><a href='#'>About Us</a></li>
+                  <li><a href='#'>Get in touch</a></li>
+                  <li><a href='#'>Promotions</a></li>
+                  <li><a href='#'>Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <ul>
+                  <li><a href='#'>Recipes</a></li>
+                  <li><a href='#'>Happy day</a></li>
+                  <li><a href='#'>Quality form</a></li>
+                  <li><a href='#'>Product process</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <ul>
+                  <li><a href='#'>Help</a></li>
+                  <li><a href='#'>Contact</a></li>
+                  <li><a href='#'>FAQ</a></li>
+                  <li><a href='#'>My account</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class='line'>
+
+    </footer>
+
+  </body>
+
+</html>

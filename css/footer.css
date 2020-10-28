@@ -1,0 +1,62 @@
+.panel-footer {
+  background-color: white !important;
+}
+
+.modal-header,
+.close {
+  background-color: #fff700;
+  color: red !important;
+  text-align: center;
+  font-size: 35px;
+}
+
+.modal-header,
+.modal-body {
+  padding: 40px 50px;
+}
+
+#googleMap {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  color: #ffa500;
+  padding: 32px;
+}
+
+footer a {
+  color: #ffa500;
+  font-size: 29px;
+}
+
+footer a:hover {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+footer h4 {
+  color: #ffa500 !important;
+  text-shadow: 2px 2px 2px black;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+ul li {
+  list-style-type: none;
+  color: black;
+}
+
+.line {
+  border: 1px solid blue;
+}
+

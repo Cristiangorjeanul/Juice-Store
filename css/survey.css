@@ -1,0 +1,70 @@
+.survey {
+  width: 178px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.page {
+  width: 178px;
+  height: 70px;
+  position: absolute;
+  margin: auto;
+  color: #fff700;
+  background: white;
+}
+
+.form {
+  font-weight: 700;
+  padding-left: 1px;
+}
+
+.star {
+  float: left;
+  height: 70px;
+  margin: auto;
+}
+
+.star:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.star:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 35px;
+  color: grey;
+}
+
+.star:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.star > input:checked ~ label {
+  color: #fff700;
+}
+
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label {
+  color: #fff700;
+}
+
+.star > input:checked + label:hover,
+.star > input:checked + label:hover ~ label,
+.star > label:hover ~ input:checked ~ label {
+  color: #fff700;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.checked {
+  color: #fff700;
+}

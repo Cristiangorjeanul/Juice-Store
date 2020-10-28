@@ -1,0 +1,102 @@
+#juice-glass {
+  margin-top: 8px;
+}
+
+.wrap {
+  padding-top: 8.5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  background: white;
+}
+
+.glass {
+  margin: auto;
+  height: 70px;
+  width: 50px;
+  border-radius: 0 0 50% 50%;
+  border: solid 1px rgba(0, 222, 255, 0.3);
+}
+
+.stem {
+  margin: 0 auto;
+  height: 5px;
+  width: 5px;
+  background-color: rgba(0, 222, 255, 0.3);
+  border-bottom: 1px solid rgb(0, 155.4, 178.5);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.base {
+  margin: 0 auto;
+  margin-top: -1px;
+  width: 45px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 222, 255, 0.3);
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  margin-top: -68px;
+  margin-left: 18px;
+}
+
+#bubble1 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 222, 255, 0.3);
+  animation: bubble1 4s infinite linear;
+}
+
+@keyframes bubble1 {
+  0% {
+    margin-left: 10px;
+    margin-top: 39px;
+  }
+  100% {
+    margin-left: 10px;
+    margin-top: -91px;
+  }
+}
+
+#bubble2 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 222, 255, 0.3);
+  animation: bubble2 5s infinite linear;
+}
+
+@keyframes bubble2 {
+  0% {
+    margin-left: 20px;
+    margin-top: 2px;
+  }
+  100% {
+    margin-left: 20px;
+    margin-top: -18px;
+  }
+}
+
+#bubble3 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 222, 255, 0.3);
+  animation: bubble3 8s infinite linear;
+}
+
+@keyframes bubble3 {
+  0% {
+    margin-left: 29px;
+    margin-top: 15px;
+  }
+  100% {
+    margin-left: 29px;
+    margin-top: -18px;
+  }
+}
