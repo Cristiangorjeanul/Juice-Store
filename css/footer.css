@@ -40,10 +40,13 @@ footer h4 {
   text-shadow: 2px 2px 2px black;
 }
 
+.footer {
+  margin-left: -41px;
+}
 ul li a {
   text-decoration: none;
   color: black;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 800;
 }
 
@@ -59,4 +62,3 @@ ul li {
 .line {
   border: 1px solid blue;
 }
-
