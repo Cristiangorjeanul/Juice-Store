@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Juice Store</title>
   <meta name="Juice store" content="Lemohoney factory, Lemohoney juice, honey, 
-  lemon juice, orange juice, raspberry juice, blackberry juice, apple juice, pineapple juice" />
+  lemon juice, orange juice, raspberry juice, blackberry juice, apple juice, pineapple juice">
   <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -16,14 +16,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/glass.css">
-  <link rel="stylesheet" href="css/survey.css">
+  <link rel="stylesheet" href="css/rating.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/game.css">
+  <link rel="stylesheet" href="css/car.css">
   <script src="./js/glass.js"></script>
   <script src="js/login.js"></script>
   <script src="js/order.js"></script>
   <script src="js/survey.js"></script>
   <script src="js/app1.js"></script>
   <script src="js/app2.js"></script>
+  <script src="js/app3.js"></script>
 </head>
 
 <body>
@@ -44,13 +47,17 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="./login.html" target="_blank" style="font-size: 12px;"><span
-                    class="glyphicon glyphicon-log-in"></span>
+              <li><a href="./login.html" target="_blank" style="font-size: 12.5px; font-weight: 800; color: #ffa500;">
+                  <span class="glyphicon glyphicon-log-in"></span>
                   Log-in</a></li>
-              <li><a href="./order.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart">
-                    Orders</span></a></li>
-              <li><a href="#contact"><span class="glyphicon glyphicon-phone">
-                    Contacts</span></a></li>
+              <li><a href="./order.html" target="_blank">
+                  <span class="glyphicon glyphicon-shopping-cart">Orders</span></a></li>
+              <li><a href="#contact">
+                  <span class="glyphicon glyphicon-phone">Contacts</span></a></li>
+              <li><a href="./survey.html" target="_blank">
+                  <span class="glyphicon glyphicon-info-sign">Survey</span></a></li>
+              <li><a href="#game">
+                  <span class="glyphicon glyphicon-play">Game</span></a></li>
             </ul>
           </div>
         </div>
@@ -213,7 +220,7 @@
               <br><span class="glyphicon glyphicon-grain logo-small"
                 style="color: #ffd500; text-shadow: 1px 1px 1px black;"></span>
               <h3 style="color: #ffd500; text-shadow: 1px 1px 1px black;">
-                BIO HONEY</h3>
+                NATURAL HONEY</h3>
               <h5>NO sugar or sweeteners!</h5><br>
               <div class="image" id="honey"></div>
               <br><span class="glyphicon glyphicon-globe logo-small"
@@ -295,32 +302,40 @@
         <div class="panel panel-default text-center">
           <div class="panel-body">
             <div class="panel-footer">
-              <h2>SURVEY</h2>
-              <h4>Your opinion is very important to us!</h4><br>
-              <h4>Do you like our products?</h4><br>
-              <button class="like-btn" data-toggle="modal" data-target="#myModal">Like!<br><span
-                  id="counter"></span></button>
-              <h4>Please rate our services!</h4>
-              <div class="survey">
-                <div class="page">
-                  <form id="form" class="form">
-                    <div class="star">
-                      <input type="radio" id="star5" name="star" value="5" />
-                      <label for="star5" title="text">5 stars</label>
-                      <input type="radio" id="star4" name="star" value="4" />
-                      <label for="star4" title="text">4 stars</label>
-                      <input type="radio" id="star3" name="star" value="3" />
-                      <label for="star3" title="text">3 stars</label>
-                      <input type="radio" id="star2" name="star" value="2" />
-                      <label for="star2" title="text">2 stars</label>
-                      <input type="radio" id="star1" name="star" value="1" />
-                      <label for="star1" title="text">1 star</label>
-                    </div><br>
+              <div id="survey">
+                <h2>SURVEY</h2>
+                <h4>Your opinion is very important to us!</h4>
+                <h4>If you like our products, click on the<br>
+                  "like" button or complete the survey!<br>
+                </h4><br>
+                <button class="like-btn" data-toggle="modal" data-target="#myModal">Like!<br><span
+                    id="counter"></span></button><br>
+                <a href="./survey.html" target="_blank">SURVEY!</a><br><br>
+                <h4>Please rate our services!</h4>
+                <div class="survey">
+                  <div class="page">
+                    <form id="form" class="form">
+                      <div class="star">
+                        <input type="radio" id="star5" name="star" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="star" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="star" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="star" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="star" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div><br>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
       <!-- Modal -->
       <div class="modal fade" id="myModal" role="dialog">
@@ -331,16 +346,14 @@
               <button type="button" class="close" data-dismiss="modal">x</button>
               <b style="color: #ffa500; font-size: 18px; text-shadow: 1px 1px 1px black;"><span
                   class="glyphicon glyphicon-heart"
-                  style="color:red; font-size: 18px; text-shadow: 1px 1px 1px black;"></span>&nbsp; Thank
-                you very much
-                <br>for your consideration!</b>
+                  style="color:red; font-size: 18px; text-shadow: 1px 1px 1px black;"></span>&nbsp;
+                Thank you very much<br>for your consideration!</b>
             </div>
             <div class="modal-body text-center">
               <b style="color:#ffa500; font-size: 18px; text-shadow: 1px 1px 1px black;"><span
                   class="glyphicon glyphicon-heart"
                   style="color:red; font-size: 18px; text-shadow: 1px 1px 1px black;"></span>&nbsp; We hope
-                our
-                products<br>will become your favorites!</b>
+                our products<br>will become your favorites!</b>
             </div>
             <div class="modal-footer">
             </div>
@@ -368,51 +381,46 @@
       </div>
       </div>
 
-      <div class='footer' class="container-fluid text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="col-sm-4">
-              <div class="panel-body">
-                <ul>
-                  <li><a href='#'>About Us</a></li>
-                  <li><a href='#'>Get in touch</a></li>
-                  <li><a href='#'>Promotions</a></li>
-                  <li><a href='#'>Events</a></li>
-                </ul>
-              </div>
+      <div id="game">
+        <h1>Click on the balls<br>to collect points!</h1>
+        <h3 style="font-weight: 800; background: lightskyblue; line-height: 35px;">Counter: <span
+            class="counter">0</span>
+          points</h3>
+        <div class="col-sm-12">
+          <div class="bottles-container">
+            <img class="bottle1" src="./assets/orange.jpg">
+            <img class="bottle2" src="./assets/pineapple.jpg">
+            <div id="shadow1"></div>
+            <div id="shadow2"></div>
+          </div>
+
+          <div id="street">
+            <div id="street-line"></div>
+          </div>
+          <div class="car">
+            <div id="front-wheel">
+              <div id="wheel-spoke1"></div>
+              <div id="wheel-spoke2"></div>
+              <div id="wheel-spoke3"></div>
             </div>
-
-            <div class="col-sm-4">
-
-              <div class="panel-body">
-                <ul>
-                  <li><a href='#'>Recipes</a></li>
-                  <li><a href='#'>Happy day</a></li>
-                  <li><a href='#'>Quality form</a></li>
-                  <li><a href='#'>Product process</a></li>
-                </ul>
-              </div>
+            <div id="rear-wheel">
+              <div id="wheel-spoke1"></div>
+              <div id="wheel-spoke2"></div>
+              <div id="wheel-spoke3"></div>
             </div>
-
-            <div class="col-sm-4">
-              <div class="panel-body">
-                <ul>
-                  <li><a href='#'>Help</a></li>
-                  <li><a href='#'>Contact</a></li>
-                  <li><a href='#'>FAQ</a></li>
-                  <li><a href='#'>My account</a></li>
-                </ul>
+            <div id="car-body">
+              <div id="ceiling"></div>
+              <div id="chassis">
+                <h3>Lemohoney</h3>
               </div>
+              <div id="front-lights"></div>
+              <div id="rear-lights"></div>
+              <div id="door-handle"></div>
+              <div id="door"></div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <hr class='line'>
-
-      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a><br><br>
 
     </footer>
 

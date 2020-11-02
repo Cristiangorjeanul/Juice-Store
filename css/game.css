@@ -1,0 +1,148 @@
+#game {
+  margin-top: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 320px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  #game {
+    margin-top: 1px;
+  }
+}
+
+section h1 {
+  margin-top: -10px;
+}
+
+.bottles-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin: auto;
+}
+
+#shadow1 {
+  width: 55px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  border-radius: 50%;
+  margin-top: 237px;
+  left: 12%;
+  opacity: 0.5;
+  animation: shadow1 2.5s linear infinite;
+}
+
+@media (min-width: 768px) {
+  #shadow1 {
+    left: 37.5%;
+  }
+}
+
+#shadow2 {
+  width: 55px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  border-radius: 50%;
+  margin-top: 235px;
+  left: 40.5%;
+  opacity: 0.5;
+  animation: shadow2 2.5s linear infinite;
+}
+
+@media (min-width: 768px) {
+  #shadow2 {
+    left: 46.5%;
+  }
+}
+
+.bottle1 {
+  width: 35px;
+  height: 120px;
+  left: 12%;
+  margin-top: -10px;
+  position: absolute;
+  overflow: hidden;
+  animation: bottle1 2.5s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .bottle1 {
+    left: 38%;
+  }
+}
+
+.bottle2 {
+  width: 35px;
+  height: 120px;
+  position: absolute;
+  left: 43%;
+  margin-top: 210px;
+  overflow: hidden;
+  animation: bottle2 2.5s linear infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .bottle2 {
+    left: 47%;
+  }
+}
+
+@keyframes bottle1 {
+  0% {
+    top: 2px;
+    transform: rotate(5deg);
+  }
+  50% {
+    top: 135px;
+    transform: rotate(-5deg);
+  }
+  100% {
+    top: 2px;
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes bottle2 {
+  0% {
+    top: -85px;
+    transform: rotate(-5deg);
+  }
+  50% {
+    top: -217px;
+    transform: rotate(5deg);
+  }
+  100% {
+    top: -85px;
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes shadow1 {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes shadow2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

@@ -40,25 +40,28 @@ footer h4 {
   text-shadow: 2px 2px 2px black;
 }
 
-.footer {
-  margin-left: -41px;
-}
-ul li a {
+
+footer a {
+  color: black;
+  padding: 1px 8px;
+  background-color: #ffa500;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
   text-decoration: none;
+  border: 2px solid black;
+}
+
+@media (min-width: 769px) {
+  footer a {
+    padding: 1px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+}
+
+footer a:hover {
+  letter-spacing: 5px;
   color: black;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-ul li a:hover {
-  color: blue;
-}
-
-ul li {
-  list-style-type: none;
-  color: black;
-}
-
-.line {
-  border: 1px solid blue;
+  background-color: #fff700;
 }
