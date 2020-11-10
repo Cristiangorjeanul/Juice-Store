@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (index === colors.length) index = 0;
       glass.style.backgroundColor = colors[index];
       index++;
-  }, 1500);
+  }, 4500);
 
 });
