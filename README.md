@@ -1,2 +1,2 @@
 # Juice-Store
-A juice store where you can find Lemohoney natural fruit juice (Html, Css, JavaScript-jQuery). If you want to see this website please visit https://cristiangorjeanul.github.io/Juice-Store/
+A juice store with natural fruit juices (Html, Css, JavaScript-jQuery): https://cristiangorjeanul.github.io/Juice-Store/
